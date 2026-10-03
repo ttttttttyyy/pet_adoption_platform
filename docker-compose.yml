@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DEBUG: "1"
+      SECRET_KEY: "dev-only-secret-key"
+      ALLOWED_HOSTS: "127.0.0.1,localhost"
